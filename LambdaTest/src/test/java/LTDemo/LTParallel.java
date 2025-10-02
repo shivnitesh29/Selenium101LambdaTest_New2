@@ -40,8 +40,8 @@ public class LTParallel {
 		HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 		ltOptions.put("username", "niteshnkumar");
 		ltOptions.put("accessKey", "LT_dRECNnYNiSVT6JwGQiy9POQBmoQlsbYwSnrBty9Ld6ryVx7");
-		ltOptions.put("build", "Selenium101_Test_7");
-		ltOptions.put("project", "Selenium101_Test_7");
+		ltOptions.put("build", "Selenium101_Test_8");
+		ltOptions.put("project", "Selenium101_Test_8");
 		ltOptions.put("visual", true);
 		ltOptions.put("video", true);
 		ltOptions.put("console", "error");
@@ -115,3 +115,4 @@ public class LTParallel {
 
 	
 	
+
