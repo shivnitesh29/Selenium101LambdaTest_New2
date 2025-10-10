@@ -76,16 +76,11 @@ public class LTParallel {
 			JavascriptExecutor js= (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView(true);", element);
 			
-			String platform = System.getProperty("os.name").toLowerCase();
-			if (platform.contains("mac")) {
-				element.sendKeys(Keys.COMMAND, Keys.RETURN);
-				      
-			} else {
-			    element.sendKeys(Keys.CONTROL, Keys.RETURN);
-			}
+			driver.switchTo().newWindow(WindowType.TAB);
+			driver.get("https://www.lambdatest.com/integrations");
 			
 	        
-            //element.sendKeys(Keys.CONTROL, Keys.RETURN);
+            
 			Set<String> windowHandles = driver.getWindowHandles();
 			List<String> windowHandlesList = new ArrayList<>(windowHandles);
 			 for (String handle : windowHandlesList) {
